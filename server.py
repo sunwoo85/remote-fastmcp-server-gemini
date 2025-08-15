@@ -25,7 +25,7 @@ def gemini_generate_text(
     """
     try:
         if model == "gemini-2.5-pro":
-            delay_seconds = 45
+            delay_seconds = 25
             
         tools = [gt.Tool(google_search=gt.GoogleSearch())] if grounding else None
         config = gt.GenerateContentConfig(
